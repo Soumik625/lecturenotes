@@ -1,2 +1,2 @@
-# https-soumik625.github.io-lecturenotes
+# Lecture&notes
 Here I am going to upload the IISER-K lectures and notes provided by Professors
