@@ -6,7 +6,34 @@ body {
   padding: 0px;
 }
 
+header {
+    background-color: #1c1c1c;
+    /* Dark grey background */
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+    /* Light grey border */
+    font-size: 100 ;
+}
 
+header h1.professional-font {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    /* Bold weight */
+    font-size: 2.5em;
+    color: #ffffff;
+    /* White text */
+}
+
+header p {
+    font-size: 1.5em;
+    color: #e0e0e0;
+    /* Light grey text */
+    display: inline-block;
+    /* Allow the <p> to occupy only the width of its content */
+    white-space: nowrap;
+    /* Ensure text does not wrap */
+}
 
 .navbar-container {
   background-color: #151515;
@@ -156,4 +183,51 @@ a:hover {
 .file-label {
   min-width: 280px; 
   display: inline-block;
+}
+
+
+
+/* Footer */
+
+footer {
+    background-color: #1c1c1c; /* Dark grey background */
+    padding: 10px 20px;
+    text-align: center;
+    border-top: 1px solid #e0e0e0; /* Light grey border */
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    /* flex-wrap: wrap; Allow items to wrap into multiple rows */
+}
+
+footer ul li {
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: #e0e0e0; /* Light grey links */
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    color: grey; /* Grey on hover */
+}
+
+
+/* Media query for mobile devices */
+@media (max-width: 600px) {
+    footer ul {
+        flex-direction: row; /* Keep the default row direction */
+        justify-content: center;
+    }
+
+    footer ul li {
+        width: 50%; /* Each item takes half the width */
+        text-align: center;
+        margin: 5px 0; /* Adjust margin for spacing */
+    }
 }
